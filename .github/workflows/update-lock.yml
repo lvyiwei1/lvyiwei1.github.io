@@ -1,0 +1,21 @@
+name: Update Gemfile.lock
+
+on:
+  workflow_dispatch: # lets you trigger it manually
+
+jobs:
+  update-lock:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2' # match your .ruby-version if you have one
+      - run: |
+          gem install bundler
+          bundle update --bundler
+          bundle install
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Regenerate Gemfile.lock without uri"
+          branch: temp-gen-update
