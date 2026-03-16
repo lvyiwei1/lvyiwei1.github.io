@@ -1,10 +1,44 @@
 ---
 ---
 
+@article{lyu2025learning,
+  title={Learning complete and explainable visual representations from itemized text supervision},
+  author={Lyu, Yiwei and Zhao, Chenhui and Banerjee, Soumyanil and Liu, Shixuan and Rao, Akshay and Kondepudi, Akhil and Lee, Honglak and Hollon, Todd C},
+  journal={CVPR},
+  year={2026},
+  abstract={Training vision models with language supervision enables general and transferable representations. However, many visual domains, especially non-object-centric domains such as medical imaging and remote sensing, contain itemized text annotations: multiple text items describing distinct and semantically independent findings within a single image. Such supervision differs from standard multi-caption supervision, where captions are redundant or highly overlapping. Here, we introduce ItemizedCLIP, a framework for learning complete and explainable visual representations from itemized text supervision. ItemizedCLIP employs a cross-attention module to produce text item-conditioned visual embeddings and a set of tailored objectives that jointly enforce item independence (distinct regions for distinct items) and representation completeness (coverage of all items). Across four domains with naturally itemized text supervision (brain MRI, head CT, chest CT, remote sensing) and one additional synthetically itemized dataset, ItemizedCLIP achieves substantial improvements in zero-shot performance and fine-grained interpretability over baselines. The resulting ItemizedCLIP representations are semantically grounded, item-differentiable, complete, and visually interpretable.},
+  code={https://github.com/MLNeurosurg/ItemizedCLIP},
+  pdf={https://arxiv.org/pdf/2512.11141}
+}
+
+@article{zhao2025towards,
+  title={Towards Scalable Language-Image Pre-training for 3D Medical Imaging},
+  author={Zhao, Chenhui and Lyu, Yiwei and Chowdury, Asadur and Harake, Edward and Kondepudi, Akhil and Rao, Akshay and Hou, Xinhai and Lee, Honglak and Hollon, Todd},
+  journal={Transactions on Machine Learning Research},
+  year={2026},
+  pdf={https://arxiv.org/pdf/2505.21862},
+  code={https://github.com/Zch0414/hlip},
+  abstract={The scalability of current language-image pre-training for 3D medical imaging, such as CT and MRI, is constrained by the need for radiologists to manually curate raw clinical studies. In this work, we pioneer pre-training directly on uncurated studies, which both aligns more closely with the radiologist's workflow and provides a natural path to scalability. However, the unique structure of such data presents new challenges for existing model architectures, which were originally designed for 2D slices or single 3D scans. To address this, we introduce a novel hierarchical attention mechanism inspired by the intrinsic hierarchy of radiology data: slice, scan, and study. We denote our framework as Hierarchical attention for Language-Image Pre-training (HLIP). Trained on 220K studies with 3.13 million scans for brain MRI and 240K studies with 1.44 million scans for head CT, HLIP achieves state-of-the-art performance, e.g., +10.5% balanced ACC on the proposed publicly available brain MRI benchmark Pub-Brain-5; +8.3% and +1.7% macro AUC on head CT benchmarks CQ500 and RSNA, respectively. HLIP also exhibits strong generalizability on existing 3D medical language-image pre-training benchmarks, e.g., +4.3% macro AUC on the Rad-ChestCT benchmark when pre-trained on CT-RATE. These results demonstrate that, with HLIP, directly pre-training on uncurated clinical datasets is a scalable and effective direction for language-image pre-training in 3D medical imaging.}
+}
+
+@article{lyu2026learning,
+  title={Learning neuroimaging models from health system-scale data},
+  author={Lyu, Yiwei and Harake, Samir and Chowdury, Asadur and Banerjee, Soumyanil and Gologorsky, Rachel and Liu, Shixuan and Meissner, Anna-Katharina and Rao, Akshay and Zhao, Chenhui and Kondepudi, Akhil and others},
+  journal={Nature Biomedical Engineering},
+  pages={1--13},
+  year={2026},
+  publisher={Nature Publishing Group UK London},
+  pdf={https://arxiv.org/pdf/2509.18638v1},
+  code={https://github.com/MLNeurosurg/Prima},
+  abstract = {Neuroimaging is a ubiquitous tool for evaluating patients with neurological diseases. The global demand for magnetic resonance imaging (MRI) studies has risen steadily, placing significant strain on health systems, prolonging turnaround times, and intensifying physician burnout \cite{Chen2017-bt, Rula2024-qp-1}. These challenges disproportionately impact patients in low-resource and rural settings. Here, we utilized a large academic health system as a data engine to develop Prima, the first vision language model (VLM) serving as an AI foundation for neuroimaging that supports real-world, clinical MRI studies as input. Trained on over 220,000 MRI studies, Prima uses a hierarchical vision architecture that provides general and transferable MRI features. Prima was tested in a 1-year health system-wide study that included 30K MRI studies. Across 52 radiologic diagnoses from the major neurologic disorders, including neoplastic, inflammatory, infectious, and developmental lesions, Prima achieved a mean diagnostic area under the ROC curve of 92.0, outperforming other state-of-the-art general and medical AI models. Prima offers explainable differential diagnoses, worklist priority for radiologists, and clinical referral recommendations across diverse patient demographics and MRI systems. Prima demonstrates algorithmic fairness across sensitive groups and can help mitigate health system biases, such as prolonged turnaround times for low-resource populations. These findings highlight the transformative potential of health system-scale VLMs and Prima's role in advancing AI-driven healthcare.},
+  website={https://prima.mlins.org/},
+  year={2026}
+}
+
 @inproceedings{lyu2024step,
   title={Step-calibrated diffusion for biomedical optical image restoration},
   author={Lyu, Yiwei and Cha, Sung Jik and Jiang, Cheng and Chowdury, Asadur and Hou, Xinhai and Harake, Edward and Kondepudi, Akhil and Freudiger, Christian and Lee, Honglak and Hollon, Todd C},
-  booktitle={AAAI 2025},
+  booktitle={AAAI},
   selected = {true},
   year={2025},
   pdf={https://arxiv.org/pdf/2403.13680},
