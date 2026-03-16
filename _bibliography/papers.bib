@@ -24,12 +24,12 @@
 
 @article{lyu2026learning,
   title={Learning neuroimaging models from health system-scale data},
-  author={Lyu, Yiwei and Harake, Samir and Chowdury, Asadur and Banerjee, Soumyanil and Gologorsky, Rachel and Liu, Shixuan and Meissner, Anna-Katharina and Rao, Akshay and Zhao, Chenhui and Kondepudi, Akhil and others},
+  author={Yiwei Lyu, Samir Harake, Asadur Chowdury, Soumyanil Banerjee, Rachel Gologorsky, Shixuan Liu, Anna-Katharina Meissner, Akshay Rao, Chenhui Zhao, Akhil Kondepudi, Cheng Jiang, Xinhai Hou, Rushikesh S. Joshi, Volker Neuschmelting, Ashok Srinivasan, Dawn Kleindorfer, Brian Athey, Vikas Gulani, Aditya Pandey, Honglak Lee, Todd Hollon},
   journal={Nature Biomedical Engineering},
   pages={1--13},
   year={2026},
   publisher={Nature Publishing Group UK London},
-  pdf={https://arxiv.org/pdf/2509.18638v1},
+  pdf={https://arxiv.org/pdf/2509.18638v2},
   code={https://github.com/MLNeurosurg/Prima},
   abstract = {Neuroimaging is a ubiquitous tool for evaluating patients with neurological diseases. The global demand for magnetic resonance imaging (MRI) studies has risen steadily, placing significant strain on health systems, prolonging turnaround times, and intensifying physician burnout \cite{Chen2017-bt, Rula2024-qp-1}. These challenges disproportionately impact patients in low-resource and rural settings. Here, we utilized a large academic health system as a data engine to develop Prima, the first vision language model (VLM) serving as an AI foundation for neuroimaging that supports real-world, clinical MRI studies as input. Trained on over 220,000 MRI studies, Prima uses a hierarchical vision architecture that provides general and transferable MRI features. Prima was tested in a 1-year health system-wide study that included 30K MRI studies. Across 52 radiologic diagnoses from the major neurologic disorders, including neoplastic, inflammatory, infectious, and developmental lesions, Prima achieved a mean diagnostic area under the ROC curve of 92.0, outperforming other state-of-the-art general and medical AI models. Prima offers explainable differential diagnoses, worklist priority for radiologists, and clinical referral recommendations across diverse patient demographics and MRI systems. Prima demonstrates algorithmic fairness across sensitive groups and can help mitigate health system biases, such as prolonged turnaround times for low-resource populations. These findings highlight the transformative potential of health system-scale VLMs and Prima's role in advancing AI-driven healthcare.},
   website={https://prima.mlins.org/},
@@ -124,7 +124,8 @@
   pdf={https://arxiv.org/pdf/2207.00056},
   abstract={The promise of multimodal models for real-world applications has inspired research in visualizing and understanding their internal mechanics with the end goal of empowering stakeholders to visualize model behavior, perform model debugging, and promote trust in machine learning models. However, modern multimodal models are typically black-box neural networks, which makes it challenging to understand their internal mechanics. How can we visualize the internal modeling of multimodal interactions in these models? Our paper aims to fill this gap by proposing MultiViz, a method for analyzing the behavior of multimodal models by scaffolding the problem of interpretability into 4 stages: (1) unimodal importance: how each modality contributes towards downstream modeling and prediction, (2) cross-modal interactions: how different modalities relate with each other, (3) multimodal representations: how unimodal and cross-modal interactions are represented in decision-level features, and (4) multimodal prediction: how decision-level features are composed to make a prediction. MultiViz is designed to operate on diverse modalities, models, tasks, and research areas. Through experiments on 8 trained models across 6 real-world tasks, we show that the complementary stages in MultiViz together enable users to (1) simulate model predictions, (2) assign interpretable concepts to features, (3) perform error analysis on model misclassifications, and (4) use insights from error analysis to debug models. MultiViz is publicly available, will be regularly updated with new interpretation tools and metrics, and welcomes inputs from the community.
 },
-  code={https://github.com/pliang279/MultiViz}
+  code={https://github.com/pliang279/MultiViz},
+  selected={true}
 }
 
 
@@ -192,8 +193,7 @@
     pages = "2116--2138",
     abstract = "Text style transfer aims to controllably generate text with targeted stylistic changes while maintaining core meaning from the source sentence constant. Many of the existing style transfer benchmarks primarily focus on individual high-level semantic changes (e.g. positive to negative), which enable controllability at a high level but do not offer fine-grained control involving sentence structure, emphasis, and content of the sentence. In this paper, we introduce a large-scale benchmark, StylePTB, with (1) paired sentences undergoing 21 fine-grained stylistic changes spanning atomic lexical, syntactic, semantic, and thematic transfers of text, as well as (2) compositions of multiple transfers which allow modeling of fine-grained stylistic changes as building blocks for more complex, high-level transfers. By benchmarking existing methods on StylePTB, we find that they struggle to model fine-grained changes and have an even more difficult time composing multiple styles. As a result, StylePTB brings novel challenges that we hope will encourage future research in controllable text style transfer, compositional models, and learning disentangled representations. Solving these challenges would present important steps towards controllable text generation.",
     pdf = {https://arxiv.org/pdf/2104.05196},
-    code = {https://github.com/lvyiwei1/StylePTB/},
-    selected = {true}
+    code = {https://github.com/lvyiwei1/StylePTB/}
 }
 
 @inproceedings{leveraging,
