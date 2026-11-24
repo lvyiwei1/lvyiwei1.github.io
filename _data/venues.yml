@@ -1,14 +1,59 @@
+"Nat. Med.":
+  url: https://www.nature.com/nm/
+  color: "#c0392b"
+
+"Nat. BME":
+  url: https://www.nature.com/natbiomedeng/
+  color: "#d35400"
+
+"CVPR":
+  url: https://cvpr.thecvf.com/
+  color: "#1f4e8c"
+
+"CVPRW":
+  url: https://cvpr.thecvf.com/
+  color: "#4a76b0"
+
+"TMLR":
+  url: https://jmlr.org/tmlr/
+  color: "#6c3483"
+
+"AAAI":
+  url: https://aaai.org/
+  color: "#0b6e4f"
+
+"ICLR":
+  url: https://iclr.cc/
+  color: "#2e86c1"
+
+"NeurIPS":
+  url: https://neurips.cc/
+  color: "#7d3c98"
+
+"NeurIPSW":
+  url: https://neurips.cc/
+  color: "#a569bd"
+
 "NAACL":
   url: https://naacl.org/
   color: "#00369f"
 
-"NeurIPS":
-  url: https://nips.cc/
-  
+"EMNLP":
+  url: https://www.aclweb.org/
+  color: "#b03a2e"
+
+"ACL":
+  url: https://www.aclweb.org/
+  color: "#d4312d"
+
+"ACL-W":
+  url: https://www.aclweb.org/
+  color: "#e06666"
+
 "AIES":
   url: https://www.aies-conference.com/
   color: "#009f36"
-  
-"ICSE":
+
+"ICSE-W":
   url: http://www.icse-conferences.org/
   color: "#9f3600"
