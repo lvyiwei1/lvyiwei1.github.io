@@ -57,3 +57,11 @@
 "ICSE-W":
   url: http://www.icse-conferences.org/
   color: "#9f3600"
+
+"Neuro-Oncol.":
+  url: https://academic.oup.com/neuro-oncology
+  color: "#1a7f8e"
+
+"Neurosurgery":
+  url: https://journals.lww.com/neurosurgery/
+  color: "#2c3e50"
